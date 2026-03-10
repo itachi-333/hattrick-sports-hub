@@ -1,13 +1,37 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navbar from "@/components/Navbar";
+import HeroSection from "@/components/HeroSection";
+import MarqueeStrip from "@/components/MarqueeStrip";
+import ShopBySport from "@/components/ShopBySport";
+import BrandsSection from "@/components/BrandsSection";
+import FeaturedProducts from "@/components/FeaturedProducts";
+import WhyChooseUs from "@/components/WhyChooseUs";
+import CustomerReviews from "@/components/CustomerReviews";
+import StoreLocation from "@/components/StoreLocation";
+import NewsletterStrip from "@/components/NewsletterStrip";
+import Footer from "@/components/Footer";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <>
+      <Navbar />
+      <HeroSection />
+      <MarqueeStrip />
+      <div className="section-divider" />
+      <ShopBySport />
+      <div className="section-divider" />
+      <BrandsSection />
+      <div className="section-divider" />
+      <FeaturedProducts />
+      <div className="section-divider" />
+      <WhyChooseUs />
+      <CustomerReviews />
+      <div className="section-divider" />
+      <StoreLocation />
+      <NewsletterStrip />
+      <Footer />
+      <WhatsAppFloat />
+    </>
   );
 };
 
